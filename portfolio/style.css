@@ -1,0 +1,90 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    font-family:"Poppins", sans-serif;
+    background: transparent;
+    background-color: rgba(0,0,0,0.5);
+    color: #ffffff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  
+  
+  /* 3D Sphere Background */
+  #scene-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Push the sphere to the background */
+  }
+  
+  /* Content Styling */
+  #content {
+    position: relative;
+    z-index: 1; /* Ensure content is above the sphere */
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  header p {
+    font-size: 1.5rem;
+    animation: fadeIn 3s ease-in-out;
+  }
+  
+  #skills {
+    margin: 40px auto;
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .skill-card {
+    background: #1f1f1f;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: calc(30% - 20px);
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Footer Styling */
+  footer {
+    text-align: center;
+    padding: 10px;
+    background: #1f1f1f;
+    margin-top: auto; /* Push the footer to the bottom */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
